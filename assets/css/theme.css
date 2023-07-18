@@ -332,13 +332,23 @@ p {
   transition: all 0.4s linear;
 }
 
+/*--------------------------------------------------------------
+# About  CSS
+--------------------------------------------------------------*/
+.about {
+  gap: 40px;
+}
 
 .about-imagebox {
   position: relative;
-  /* width: 716px; */
   height: 555px;
-}
+  overflow: hidden;
+  width: 45%;
+  /* width: 716px; */
 
+  border: 1px solid black;
+
+}
 
 .about-imagebox__base {
   position: absolute;
@@ -373,6 +383,8 @@ p {
   position: absolute;
   bottom: 40px;
   left: 0;
+  height: 218px;
+  width: 350px;
 }
 
 .about-imagebox__icon {
@@ -389,24 +401,6 @@ p {
   left: 50%;
   top: 50%;
   transform: translateX(-50%) translateY(-50%);
-}
-
-
-
-
-
-/*--------------------------------------------------------------
-# About Textbox CSS
---------------------------------------------------------------*/
-
-
-/* .blabla {
-  display: flex;
-  gap: 69px;
-} */
-
-.about-imagebox {
-  width: 50%;
 }
 
 
@@ -427,12 +421,10 @@ p {
   align-items: center;
 }
 
-
 .about-textbox__icon {
   height: 20px;
   height: 15px;
 }
-
 
 .feature-title {
   position: relative;
@@ -527,6 +519,19 @@ p {
     font-size: 48pt;
     line-height: 50pt;
   }
+
+  /* about */
+
+  .about-imagebox {
+    width: 716px;
+    margin: 0 auto;
+
+  }
+
+  .about-textbox {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -554,6 +559,14 @@ p {
     line-height: 70pt;
   }
 
+
+  /* about */
+
+  .about-imagebox {
+    width: 716px;
+    margin: 0 auto;
+
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -594,5 +607,105 @@ p {
 
   /* about */
 
-  
+  .about-imagebox {
+    height: 277px;
+    width: 358px;
+    margin: 0 auto;
+
+  }
+
+  .about-imagebox__base {
+    height: 162px;
+    width: 326px;
+    top: 20px;
+    left: 32px;
+
+  }
+
+  .about-imagebox__image-main {
+    width: 300px;
+    height: 275px;
+    top: 0;
+    bottom: 0;
+    left: 42px;
+  }
+
+  .about-imagebox__border {
+    height: 197px;
+    width: 313px;
+    top: 42px;
+    left: 18px;
+    bottom: 42px;
+    right: 26px;
+  }
+
+  .about-imagebox__image-sub {
+    bottom: 20px;
+    height: 109px;
+    width: 175px;
+  }
+
+  .about-imagebox__icon {
+    bottom: 55px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .idea-icon {
+    width: 50%;
+  }
+
+  .about-textbox__subtitle {
+    font-size: 9pt;
+  }
+
+  .about-textbox__title {
+    font-size: 25pt;
+    line-height: 30pt;
+  }
+
+  .about-textbox__icon {
+    height: 10px;
+    height: 7px;
+  }
+
+  .feature-title__text {
+    margin-left: 19px;
+    font-size: 10pt;
+    line-height: 15pt;
+  }
+
+
+  .feature-subtitle {
+    font-size: 8pt;
+    line-height: 15pt;
+  }
+
+  .about-textbox__feature {
+    margin-top: 25px;
+  }
+
+  .about-textbox__details {
+    margin-top: 25px;
+    font-size: 8pt;
+    line-height: 15pt;
+  }
+
+  .contact-person__image {
+    border: 1px solid var(--pitoon-base);
+    padding: 3px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
+
+  .contact-person__name {
+    font-size: 10pt;
+    line-height: 15px;
+  }
+
+  .contact-person__title {
+    font-size: 6pt;
+    line-height: 15px;
+  }
 }
