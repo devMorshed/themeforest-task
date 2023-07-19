@@ -7,7 +7,7 @@
 			items: 1,
 			loop: true,
 			responsiveClass: true,
-			autoplay: true,
+			// autoplay: true,
 			autoplayTimeout: 5000,
 			autoplayHoverPause: true,
 		});
